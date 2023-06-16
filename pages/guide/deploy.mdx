@@ -1,0 +1,48 @@
+import { Callout } from 'nextra/components'
+import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+
+# 部署
+
+## 后端
+
+<Steps>
+
+### 下载二进制文件
+首先，从[GitHub Release](https://github.com/retalkgo/retalk/releases/latest)下载对应系统的后端二进制文件压缩包。
+
+### 解压
+解压上一步下载的压缩包：
+
+<Tabs items={['Linux', 'Windows', 'MacOS']}>
+    <Tab>
+        ```bash
+            tar -zxvf retalk_v0.1.0_linux_amd64.tar.gz -C .
+            rm -rf retalk_v0.1.0_linux_amd64.tar.gz
+        ```
+    </Tab>
+    <Tab>
+        请使用Windows附带的解压缩软件或第三方解压软件解压下载到的压缩包。
+    </Tab>
+    <Tab>
+        ```bash
+            tar -zxvf retalk_v0.1.0_darwin_amd64.tar.gz -C .
+            rm -rf retalk_v0.1.0_darwin_amd64.tar.gz
+        ```
+    </Tab>
+</Tabs>
+
+解压后就能得到名为`retalk`的二进制可执行文件（不同系统下存在后缀名的差别，如Windows下为`.exe`）。
+
+### 启动
+
+运行解压后的可执行文件即可运行服务端，默认端口为3000。
+
+<Callout type="info">
+  您可以通过screen等方式使其持续运行
+</Callout>
+
+## 前端
+
+> 正在开发
+
+</Steps>
