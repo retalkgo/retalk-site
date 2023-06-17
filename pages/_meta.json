@@ -1,6 +1,7 @@
 {
   "index": "介绍",
   "guide": "指南",
+  "develop": "开发",
   "about": {
     "title": "关于",
     "type": "page"
