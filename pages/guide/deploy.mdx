@@ -1,5 +1,6 @@
 import { Callout } from 'nextra/components'
 import { Steps, Tab, Tabs } from 'nextra-theme-docs'
+import Version from '../../components/Version'
 
 # 部署
 
@@ -16,8 +17,8 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
 <Tabs items={['Linux', 'Windows', 'MacOS']}>
     <Tab>
         ```bash
-            tar -zxvf retalk_v0.1.0_linux_amd64.tar.gz -C .
-            rm -rf retalk_v0.1.0_linux_amd64.tar.gz
+        tar -zxvf retalk_v0.1.0_linux_amd64.tar.gz -C .
+        rm -rf retalk_v0.1.0_linux_amd64.tar.gz
         ```
     </Tab>
     <Tab>
@@ -25,8 +26,8 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
     </Tab>
     <Tab>
         ```bash
-            tar -zxvf retalk_v0.1.0_darwin_amd64.tar.gz -C .
-            rm -rf retalk_v0.1.0_darwin_amd64.tar.gz
+        tar -zxvf retalk_v0.1.0_darwin_amd64.tar.gz -C .
+        rm -rf retalk_v0.1.0_darwin_amd64.tar.gz
         ```
     </Tab>
 </Tabs>
@@ -41,8 +42,54 @@ import { Steps, Tab, Tabs } from 'nextra-theme-docs'
   您可以通过screen等方式使其持续运行
 </Callout>
 
+</Steps>
+
 ## 前端
 
-> 正在开发
+<Steps>
+
+### 在网站引入JS与CSS
+
+<Tabs items={['通过CDN', '通过NPM']}>
+    <Tab>
+        ```html
+        <script src="https://cdn.jsdelivr.net/npm/retalk@latest/dist/retalk.js">
+        <script src="https://cdn.jsdelivr.net/npm/retalk@latest/dist/retalk.css">
+        ```
+        <Callout type="warning">
+                Jsdelivr在部分地区的访问速度并不理想，我们建议您通过Jsdelivr镜像或其他NPM CDN引入静态资源。
+        </Callout>
+    </Tab>
+    <Tab>
+        ```bash
+        npm install retalk
+        # 或使用Yarn
+        yarn add retalk
+        ```
+        安装后，您可以通过`import`进行导入：
+        ```typescript
+        import Retalk from "retalk";
+        ```
+    </Tab>
+</Tabs>
+
+### 初始化前端
+
+```html
+<div id="retalk"></div>
+<script>
+    new Retalk({
+        server: "https://your_domain"
+    })
+</script>
+```
+
+您可以通过检测控制台是否输出如下的版本信息验证安装：
+
+<Version />
+
+### 初始化后端
+
+在初始化前端后，评论区域会自动弹出初始化页面。
 
 </Steps>
