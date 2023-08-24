@@ -1,6 +1,6 @@
-我们提供了丰富的JS-API让您可以快速的调用Retalk
+我们提供了丰富的 JS-API 让您可以快速的调用 retalk
 
-## 初始化Retalk
+## 初始化 retalk
 
 ```typescript
 const retalk = new Retalk({
