@@ -9,7 +9,7 @@ import Version from '../../components/Version'
 <Steps>
 
 ### 下载二进制文件
-首先，从[GitHub Release](https://github.com/retalkgo/retalk/releases/latest)下载对应系统的后端二进制文件压缩包。
+首先，从 **[GitHub Release](https://github.com/retalkgo/retalk/releases/latest)** 下载对应系统的后端二进制文件压缩包。
 
 ### 解压
 解压上一步下载的压缩包：
@@ -22,7 +22,7 @@ import Version from '../../components/Version'
         ```
     </Tab>
     <Tab>
-        请使用Windows附带的解压缩软件或第三方解压软件解压下载到的压缩包。
+        请使用 Windows 附带的解压缩软件或第三方解压软件解压下载到的压缩包。
     </Tab>
     <Tab>
         ```bash
@@ -32,14 +32,14 @@ import Version from '../../components/Version'
     </Tab>
 </Tabs>
 
-解压后就能得到名为`retalk`的二进制可执行文件（不同系统下存在后缀名的差别，如Windows下为`.exe`）。
+解压后就能得到名为 `retalk` 的二进制可执行文件（不同系统下存在后缀名的差别，如 Windows 下为 `.exe`）。
 
 ### 启动
 
-运行解压后的可执行文件即可运行服务端，默认端口为3000。
+运行解压后的可执行文件即可运行服务端，默认端口为 3000。
 
 <Callout type="info">
-  您可以通过screen等方式使其持续运行
+  您可以通过 screen 等方式使其持续运行
 </Callout>
 
 </Steps>
@@ -57,16 +57,16 @@ import Version from '../../components/Version'
         <script src="https://cdn.jsdelivr.net/npm/retalk@latest/dist/retalk.css">
         ```
         <Callout type="warning">
-                Jsdelivr在部分地区的访问速度并不理想，我们建议您通过Jsdelivr镜像或其他NPM CDN引入静态资源。
+                Jsdelivr 在部分地区的访问速度并不理想，我们建议您通过 Jsdelivr 镜像或其他 NPM CDN 引入静态资源。
         </Callout>
     </Tab>
     <Tab>
         ```bash
         npm install retalk
-        # 或使用Yarn
+        # 或使用 yarn
         yarn add retalk
         ```
-        安装后，您可以通过`import`进行导入：
+        安装后，您可以通过 `import` 进行导入：
         ```typescript
         import Retalk from "retalk";
         ```
