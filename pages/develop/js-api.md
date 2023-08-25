@@ -1,4 +1,4 @@
-我们提供了丰富的 JS-API 让您可以快速的调用 retalk
+我们提供了丰富的 JS API 让您可以快速的调用 retalk
 
 ## 初始化 retalk
 
