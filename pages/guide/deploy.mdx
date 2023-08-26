@@ -53,8 +53,8 @@ import Version from '../../components/Version'
 <Tabs items={['通过CDN', '通过NPM']}>
     <Tab>
         ```html
-        <script src="https://cdn.jsdelivr.net/npm/retalk@latest/dist/retalk.js">
-        <script src="https://cdn.jsdelivr.net/npm/retalk@latest/dist/retalk.css">
+        <script src="https://cdn.jsdelivr.net/npm/@retalkgo/client@latest/dist/retalk.js">
+        <script src="https://cdn.jsdelivr.net/npm/@retalkgo/client@latest/dist/retalk.css">
         ```
         <Callout type="warning">
                 Jsdelivr 在部分地区的访问速度并不理想，我们建议您通过 Jsdelivr 镜像或其他 NPM CDN 引入静态资源。
@@ -62,13 +62,13 @@ import Version from '../../components/Version'
     </Tab>
     <Tab>
         ```bash
-        npm install retalk
+        npm install @retalkgo/client
         # 或使用 yarn
-        yarn add retalk
+        yarn add @retalkgo/client
         ```
         安装后，您可以通过 `import` 进行导入：
         ```typescript
-        import Retalk from "retalk";
+        import Retalk from "@retalkgo/client";
         ```
     </Tab>
 </Tabs>
@@ -79,6 +79,7 @@ import Version from '../../components/Version'
 <div id="retalk"></div>
 <script>
     new Retalk({
+        el: "#retalk",
         server: "https://your_domain"
     })
 </script>
