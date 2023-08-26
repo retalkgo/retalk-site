@@ -19,13 +19,17 @@ import Version from "../../components/Version";
 
 <Tabs items={["Linux", "Windows", "macOS"]}>
 	<Tab>
-		```bash tar -zxvf retalk_v0.1.0_linux_amd64.tar.gz -C . rm -rf
-		retalk_v0.1.0_linux_amd64.tar.gz ```
+		```bash
+		tar -zxvf retalk_v0.1.0_linux_amd64.tar.gz -C .
+		rm -rf retalk_v0.1.0_linux_amd64.tar.gz 
+	```
 	</Tab>
 	<Tab>请使用 Windows 附带的解压缩软件或第三方解压软件解压下载到的压缩包。</Tab>
 	<Tab>
-		```bash tar -zxvf retalk_v0.1.0_darwin_amd64.tar.gz -C . rm -rf
-		retalk_v0.1.0_darwin_amd64.tar.gz ```
+		```bash
+		tar -zxvf retalk_v0.1.0_darwin_amd64.tar.gz -C .
+		rm -rf retalk_v0.1.0_darwin_amd64.tar.gz 
+	```
 	</Tab>
 </Tabs>
 
@@ -70,8 +74,9 @@ import Version from "../../components/Version";
 
 ### 初始化前端
 
+<!-- eslint-skip -->
+
 ```html
-<!doctype html>
 <div id="retalk"></div>
 <script>
 	new Retalk({
