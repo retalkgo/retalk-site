@@ -1,9 +1,10 @@
-我们提供了丰富的 JS API 让您可以快速的调用 retalk
+我们提供了丰富的 JS API 让您可以快速的调用 retalk。
 
 ## 初始化 retalk
 
 ```typescript
 const retalk = new Retalk({
+    el: "#some-id",
     server: "https://your_domain"
 })
 ```
@@ -11,7 +12,7 @@ const retalk = new Retalk({
 ## 新增评论
 
 ```typescript
-retalk.addComment({
+retalk.api.createComment({
     name: "评论发布者名称",
     email: "评论发布者邮箱",
     link: "评论发布者网站链接",
@@ -22,15 +23,13 @@ retalk.addComment({
 ## 获取所有评论
 
 ```typescript
-retalk.getAllComments()
+retalk.getComments()
 ```
 
 ## 获取指定页面的评论
 
 ```typescript
-retalk.getCommentsByPath({
-    path: "页面的路径"
-})
+retalk.getComments("页面的路径")
 ```
 
 ## 初始化服务端
@@ -48,13 +47,13 @@ retalk.init({
 
 ```typescript
 retalk.getServerVersion()
-// 返回示例
-"v0.1.0"
+// -> "0.1.0"
 ```
 
 # 获取前端版本
 
 ```typescript
-retalk.getFrontVersion()
-"v0.1.0"
+// 注意，这里的 version 属性来自于 Retalk 类
+Retalk.version
+// -> "0.1.0"
 ```
