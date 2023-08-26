@@ -32,7 +32,7 @@ devDependencies:
     specifier: 18.11.10
     version: 18.11.10
   '@types/react':
-    specifier: '18'
+    specifier: ^18.0.25
     version: 18.0.25
   eslint:
     specifier: ^8.48.0
