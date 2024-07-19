@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"packageManager": "pnpm@8.6.3",
+	"packageManager": "pnpm@8.15.9",
 	"author": "Shu Ding <g@shud.in>",
 	"scripts": {
 		"build": "next build",
