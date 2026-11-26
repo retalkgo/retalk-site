@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@so1ve/eslint-config": "^0.120.0",
-		"@so1ve/prettier-config": "^0.120.0",
+		"@so1ve/prettier-config": "^0.123.0",
 		"@types/node": "18.11.10",
 		"@types/react": "^18.0.25",
 		"eslint": "^8.48.0",
